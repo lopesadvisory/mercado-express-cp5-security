@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title>Mercado Express</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div th:replace="~{fragments/nav :: nav}"></div>
+
+<div class="hero py-5 mb-4">
+    <div class="container text-center">
+        <h1 class="display-5 fw-bold">Mercado Express</h1>
+        <p class="lead">Sistema de controle de estoque com login seguro e dois níveis de acesso.</p>
+        <div sec:authorize="isAnonymous()">
+            <a class="btn btn-light btn-lg me-2" th:href="@{/login}">Entrar</a>
+            <a class="btn btn-outline-light btn-lg" th:href="@{/cadastro}">Criar conta</a>
+        </div>
+        <div sec:authorize="isAuthenticated()">
+            <a class="btn btn-light btn-lg" th:href="@{/produtos}">Ver produtos</a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Catálogo</h5>
+                    <p class="card-text">Consulte os produtos cadastrados no mercado, com informações de tipo, setor, tamanho e preço.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Acesso controlado</h5>
+                    <p class="card-text">Clientes consultam o catálogo; administradores podem cadastrar, editar e remover produtos.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">Cadastro próprio</h5>
+                    <p class="card-text">Quem ainda não tem conta pode se inscrever e passa a acessar o sistema como cliente.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

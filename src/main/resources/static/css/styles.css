@@ -1,0 +1,12 @@
+body {
+    background-color: #f4f4f4;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+.hero {
+    background: linear-gradient(135deg, #1c2430, #2f3b4c);
+    color: #fff;
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Mercado Express - Acesso negado</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<div th:replace="~{fragments/nav :: nav}"></div>
+
+<div class="container">
+    <div class="alert alert-danger" style="max-width: 480px;">
+        <h1 class="h5">Acesso negado</h1>
+        <p class="mb-3">Sua conta não tem permissão para acessar essa página. Essa área é restrita a administradores.</p>
+        <a class="btn btn-outline-danger btn-sm" th:href="@{/produtos}">Voltar para os produtos</a>
+    </div>
+</div>
+</body>
+</html>
