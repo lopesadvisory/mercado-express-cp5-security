@@ -15,7 +15,7 @@ Link do GitHub (com o ReadMe do projeto):
 https://github.com/lopesadvisory/mercado-express-cp5-security
 
 Link da aplicação publicada:
-[a preencher após o deploy no Render]
+https://mercado-express-cp5-security.onrender.com
 
 Sistema utilizado para o Deploy:
 Render

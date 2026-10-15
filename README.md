@@ -4,7 +4,7 @@ Trabalho de Checkpoint 5 (Parte 1 - Spring Security MVC, Deploy e PostgreSQL) da
 
 Este repositório dá continuidade ao domínio "mercado express" dos checkpoints anteriores, agora com persistência em PostgreSQL e autenticação própria: uma tela de login diferente da padrão do Spring Security, cadastro de novos usuários (Sign Up) e dois níveis de acesso distintos para quem usa o sistema.
 
-A aplicação está publicada e em funcionamento em: **[a preencher após o deploy no Render]**
+A aplicação está publicada e em funcionamento em: **https://mercado-express-cp5-security.onrender.com**
 
 ## Integrantes
 
@@ -138,7 +138,7 @@ Após salvar, o produto aparece na listagem:
 
 A aplicação está publicada no Render, com build automatizado a partir do `Dockerfile` e do `render.yaml` presentes no repositório, conectada a um banco PostgreSQL também hospedado no Render.
 
-- Aplicação publicada: **[a preencher após o deploy no Render]**
+- Aplicação publicada: **https://mercado-express-cp5-security.onrender.com**
 - Repositório GitHub: https://github.com/lopesadvisory/mercado-express-cp5-security
 
 ## Executando o projeto localmente
