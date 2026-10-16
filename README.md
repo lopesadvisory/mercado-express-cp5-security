@@ -25,6 +25,10 @@ IDE utilizada no desenvolvimento: **IntelliJ IDEA**.
 - Bootstrap 5, para o layout das telas
 - Docker e Render, para o deploy
 
+Configuração final gerada no Spring Initializr, com as dependências utilizadas:
+
+![Spring Initializr](prints/print-spring-initializr.png)
+
 ## Estrutura de dados
 
 ### Produtos
